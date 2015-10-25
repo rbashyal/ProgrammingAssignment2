@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
   
   get <- function() x                      #get the value of the vector
   setinv <- function(invert) m<<- invert   #set the value of the inverted matrix
-  getinv <- function() m                   #get the value of the mean
+  getinv <- function() m                   #get the value of the inverted matrix
   list(set = set
        , get = get
        , setinv = setinv
