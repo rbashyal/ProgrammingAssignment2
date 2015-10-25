@@ -33,8 +33,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+  ## Define a function invert that takes a matrix called "matrix" and returns its inverse
   invert <- function(matrix) {
+    
+    ##inverse is calculated by dividing the matrix of cofactors by the determinant of the matrix
     
     minor <- function(matrix,i,j) det(matrix[-i,-j])
     
@@ -63,6 +65,5 @@ cacheSolve <- function(x, ...) {
   x$setinv(m)
   m
 }
-
 
 
